@@ -1,12 +1,21 @@
+class Note {
+  constructor(title, content) {
+    this.title = title;
+    this.content = content;
+  }
+}
+
 // Wait until page is fully loaded
 window.addEventListener('load', function() {
   
   // Create sidebar
   const sidebar = document.createElement('div');
   sidebar.className = 'sidebar';
+  let notes = 
   sidebar.innerHTML = `
     <h1>Notes</h1>
     <input type="text" placeholder="Write here..." style="width: 90%; margin: 10px;">
+    <div></div>
   `;
   sidebar.style.display = 'none'; // hide by default
   document.body.appendChild(sidebar);

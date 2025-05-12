@@ -3,7 +3,7 @@
     justify-content: center; /* horizontal centering */
     align-items: center;     /* vertical centering */
 
-    text-align: left;
+    text-align: start;
     height: 80vh;
     width: 95vw;
     box-sizing: border-box;

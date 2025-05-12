@@ -3,7 +3,7 @@
   "name": "My First Extension",
   "version": "1.0",
   "description": "This is my first Chrome extension!",
-  "permissions": ["activeTab", "contextMenus", "scripting"],
+  "permissions": ["activeTab", "contextMenus", "scripting", "storage"],
   "background": {
     "service_worker": "background.js"
   },
@@ -20,5 +20,9 @@
       "js": ["script/sidebar.js"],
       "css": ["css/sidebar.css"]
     }
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
   ]
 }

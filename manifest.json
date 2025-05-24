@@ -17,7 +17,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["script/sidebar.js"],
+      "js": ["script/injectsidebar.js"],
       "css": ["css/sidebar.css"]
     }
   ],

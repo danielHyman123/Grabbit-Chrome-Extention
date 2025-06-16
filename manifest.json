@@ -3,7 +3,7 @@
   "name": "My First Extension",
   "version": "1.0",
   "description": "This is my first Chrome extension!",
-  "permissions": ["activeTab", "contextMenus", "scripting", "storage", "windows"],
+  "permissions": ["activeTab", "contextMenus", "scripting", "storage", "windows", "tabs"],
   "background": {
     "service_worker": "script/background.js"
   },
@@ -26,7 +26,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["notes.html"],
+      "resources": ["notes.html", "/back.jpg"],
       "matches": ["<all_urls>"]
     }
   ]

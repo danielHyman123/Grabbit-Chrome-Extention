@@ -8,6 +8,8 @@ chrome.runtime.onInstalled.addListener(() => {
     })
     // start the notes value as an empty array to start
     chrome.storage.local.set({notes: []})
+
+
 })
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
